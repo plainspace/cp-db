@@ -322,7 +322,7 @@
                                 <rect key="frame" x="8" y="472" width="303" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="2gd-Fi-XRg" kind="push" id="Pqx-70-hqx"/>
+                                    <segue destination="2gd-Fi-XRg" kind="modal" id="Pqx-70-hqx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="y2I-fP-r5g">
