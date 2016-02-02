@@ -14,6 +14,8 @@ class SignInRootViewController: UIViewController {
         super.viewDidLoad()
         
         performSegueWithIdentifier("signInSegue", sender: self)
+        
+        navigationController!.popViewControllerAnimated(true)
 
         // Do any additional setup after loading the view.
     }

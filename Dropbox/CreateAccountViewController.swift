@@ -14,6 +14,8 @@ class CreateAccountViewController: UIViewController {
         super.viewDidLoad()
         
         performSegueWithIdentifier("createAccountSegue", sender: self)
+        
+        navigationController!.popViewControllerAnimated(true)
 
         // Do any additional setup after loading the view.
     }
