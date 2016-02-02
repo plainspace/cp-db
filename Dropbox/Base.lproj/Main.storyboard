@@ -348,6 +348,12 @@
                     <view key="view" contentMode="scaleToFill" id="41X-ac-OCt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="empty_files" id="Qw9-lm-2iE">
+                                <rect key="frame" x="0.0" y="65" width="320" height="454"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="YRB-Uo-90P"/>
@@ -363,6 +369,12 @@
                     <view key="view" contentMode="scaleToFill" id="gIN-oa-j3C">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="empty_photos" id="ass-0c-fpN">
+                                <rect key="frame" x="0.0" y="65" width="320" height="454"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="atE-Jw-b8G"/>
@@ -378,6 +390,12 @@
                     <view key="view" contentMode="scaleToFill" id="ITd-Pc-5QS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="empty_favorites" id="LAk-x5-Wvn">
+                                <rect key="frame" x="0.0" y="65" width="320" height="454"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="x8S-pj-s7a"/>
@@ -422,6 +440,18 @@
                     <view key="view" contentMode="scaleToFill" id="SSc-0E-5oe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="41E-As-Pwo">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="settings" id="x10-X3-cPk">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="772"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="yz2-qd-6Uq"/>
@@ -570,11 +600,11 @@
             </objects>
             <point key="canvasLocation" x="1175" y="991"/>
         </scene>
-        <!--Item 2-->
+        <!--Files-->
         <scene sceneID="Zbg-ms-jgf">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wbd-ab-X3O" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="TFb-rO-DPe"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wbd-ab-X3O" userLabel="Files" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Files" image="files_tab" id="TFb-rO-DPe" userLabel="Files"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kxm-DK-suC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -589,11 +619,11 @@
             </objects>
             <point key="canvasLocation" x="3517" y="1737"/>
         </scene>
-        <!--Item 1-->
+        <!--Photos-->
         <scene sceneID="Hgy-Mx-gW7">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fM6-VQ-Qel" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Ufb-sG-cM1"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fM6-VQ-Qel" userLabel="Photos" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Photos" image="photos_tab" id="Ufb-sG-cM1" userLabel="Photos"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ep3-rt-tiv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -608,11 +638,11 @@
             </objects>
             <point key="canvasLocation" x="4274" y="1737"/>
         </scene>
-        <!--Item-->
+        <!--Favorites-->
         <scene sceneID="QnZ-3E-Am8">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YAp-3t-1Ex" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="9Nb-ol-aGd"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YAp-3t-1Ex" userLabel="Favorites" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favorites" image="favorites_tab" id="9Nb-ol-aGd" userLabel="Favorites"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5uM-fJ-qLF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -627,11 +657,11 @@
             </objects>
             <point key="canvasLocation" x="3517" y="2418"/>
         </scene>
-        <!--Item-->
+        <!--Settings-->
         <scene sceneID="6Tp-rN-22a">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lex-hR-uH1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="KUv-SZ-Gvk"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lex-hR-uH1" userLabel="Settings" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings_tab" id="KUv-SZ-Gvk" userLabel="Settings"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eJi-cR-vrx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -654,7 +684,15 @@
         <image name="create4" width="320" height="568"/>
         <image name="create5" width="320" height="568"/>
         <image name="create_account" width="320" height="568"/>
+        <image name="empty_favorites" width="320" height="454"/>
+        <image name="empty_files" width="320" height="454"/>
+        <image name="empty_photos" width="320" height="454"/>
+        <image name="favorites_tab" width="30" height="30"/>
+        <image name="files_tab" width="30" height="30"/>
         <image name="logged_out" width="320" height="568"/>
+        <image name="photos_tab" width="30" height="30"/>
+        <image name="settings" width="320" height="772"/>
+        <image name="settings_tab" width="30" height="30"/>
         <image name="sign_in1" width="320" height="568"/>
         <image name="terms" width="320" height="568"/>
         <image name="welcome1" width="320" height="568"/>
