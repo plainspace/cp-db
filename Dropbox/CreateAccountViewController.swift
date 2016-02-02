@@ -12,6 +12,8 @@ class CreateAccountViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        performSegueWithIdentifier("createAccountSegue", sender: self)
 
         // Do any additional setup after loading the view.
     }
