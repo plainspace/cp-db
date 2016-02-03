@@ -154,6 +154,20 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uCX-ax-s27">
+                                <rect key="frame" x="0.0" y="426" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="Uwa-Ux-IIr" kind="modal" id="Ndi-VG-2a8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kYF-C5-fkh">
+                                <rect key="frame" x="0.0" y="469" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="3Pm-A2-jB0" kind="modal" id="Wo4-07-pdY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -207,7 +221,7 @@
         <!--Create Account View Controller 2-->
         <scene sceneID="pXz-AX-vvG">
             <objects>
-                <viewController id="8SX-iw-lgM" userLabel="Create Account View Controller 2" sceneMemberID="viewController">
+                <viewController id="8SX-iw-lgM" userLabel="Create Account View Controller 2" customClass="CreateAccount2ViewController" customModule="Dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LhL-NK-JRi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -226,11 +240,17 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="r99-lY-IUa">
                                 <rect key="frame" x="0.0" y="27" width="104" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="welcomeButtonAction:" destination="8SX-iw-lgM" eventType="touchUpInside" id="Qsk-ep-O7e"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="vve-il-a0R"/>
+                    <connections>
+                        <outlet property="welcomeButton" destination="r99-lY-IUa" id="Vek-EX-PnM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Oz-ZV-kUq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -239,7 +259,7 @@
         <!--Create Account View Controller 3-->
         <scene sceneID="MZ9-6S-dLo">
             <objects>
-                <viewController id="4Bq-zC-K0s" userLabel="Create Account View Controller 3" sceneMemberID="viewController">
+                <viewController id="4Bq-zC-K0s" userLabel="Create Account View Controller 3" customClass="CreateAccount3ViewController" customModule="Dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EC1-h5-Mev">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -270,7 +290,7 @@
         <!--Create Account View Controller 4-->
         <scene sceneID="ape-gP-9JB">
             <objects>
-                <viewController id="DMV-Qb-AvW" userLabel="Create Account View Controller 4" sceneMemberID="viewController">
+                <viewController id="DMV-Qb-AvW" userLabel="Create Account View Controller 4" customClass="CreateAccount4ViewController" customModule="Dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K8h-eT-xdf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -301,7 +321,7 @@
         <!--Create Account View Controller 5-->
         <scene sceneID="MLR-ub-F1e">
             <objects>
-                <viewController id="K5p-bA-OY8" userLabel="Create Account View Controller 5" sceneMemberID="viewController">
+                <viewController id="K5p-bA-OY8" userLabel="Create Account View Controller 5" customClass="CreateAccount5ViewController" customModule="Dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I0n-pB-7oV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -349,7 +369,7 @@
                                 <rect key="frame" x="8" y="472" width="303" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="2gd-Fi-XRg" kind="modal" id="Pqx-70-hqx"/>
+                                    <segue destination="2gd-Fi-XRg" kind="modal" modalTransitionStyle="crossDissolve" id="Pqx-70-hqx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="y2I-fP-r5g">
@@ -387,7 +407,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0PI-3o-yqn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3152" y="2717"/>
+            <point key="canvasLocation" x="3200" y="2717"/>
         </scene>
         <!--Photos-->
         <scene sceneID="ISd-3C-u29">
@@ -429,7 +449,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ztS-7u-3kk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3152" y="3398"/>
+            <point key="canvasLocation" x="3200" y="3398"/>
         </scene>
         <!--Settings-->
         <scene sceneID="ZsT-WI-2Cu">
@@ -453,7 +473,6 @@
                                         <connections>
                                             <action selector="SettingsEmptySignOUt:" destination="7Me-ci-Oz7" eventType="touchUpInside" id="vTX-eV-pbK"/>
                                             <action selector="SettingsEmptySignOut:" destination="7Me-ci-Oz7" eventType="touchUpInside" id="sL8-8M-y5a"/>
-                                            <segue destination="5or-ny-JBN" kind="custom" id="irk-7p-NPU"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -561,6 +580,20 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PnM-y2-FeS">
+                                <rect key="frame" x="0.0" y="425" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="Uwa-Ux-IIr" kind="modal" id="GDl-wH-Lb5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WeU-NH-uix">
+                                <rect key="frame" x="0.0" y="468" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="3Pm-A2-jB0" kind="modal" id="prX-Ok-P6K"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -576,7 +609,7 @@
         <!--Sign In View Controller-->
         <scene sceneID="y6t-KN-Dt1">
             <objects>
-                <viewController id="Uwa-Ux-IIr" userLabel="Sign In View Controller" sceneMemberID="viewController">
+                <viewController id="Uwa-Ux-IIr" userLabel="Sign In View Controller" customClass="SignInViewController" customModule="Dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k1k-BJ-9dU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -592,10 +625,21 @@
                                     <segue destination="6Hq-Qu-T1d" kind="modal" animates="NO" modalTransitionStyle="crossDissolve" id="1hY-iW-Wy6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kQo-9Z-rlH">
+                                <rect key="frame" x="0.0" y="26" width="104" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="WelcomeButtonAction:" destination="Uwa-Ux-IIr" eventType="touchUpInside" id="ApK-XI-cFK"/>
+                                    <action selector="welcomeButtonAction:" destination="3Pm-A2-jB0" eventType="touchUpInside" id="tP6-DR-jee"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="uZ8-xd-tDl"/>
+                    <connections>
+                        <outlet property="WelcomeButton" destination="kQo-9Z-rlH" id="STa-ex-50i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hPl-Ol-8tM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -637,7 +681,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pIA-5Z-iTV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2805" y="2717"/>
+            <point key="canvasLocation" x="2853" y="2717"/>
         </scene>
         <!--Photos-->
         <scene sceneID="Hgy-Mx-gW7">
@@ -675,7 +719,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QHE-LU-tDx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2805" y="3398"/>
+            <point key="canvasLocation" x="2853" y="3398"/>
         </scene>
         <!--Settings-->
         <scene sceneID="6Tp-rN-22a">
@@ -992,7 +1036,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="inw-tX-uj3"/>
         <segue reference="oCX-ni-eey"/>
-        <segue reference="irk-7p-NPU"/>
         <segue reference="IYx-xA-C6X"/>
+        <segue reference="prX-Ok-P6K"/>
     </inferredMetricsTieBreakers>
 </document>

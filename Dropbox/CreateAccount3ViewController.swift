@@ -1,31 +1,18 @@
 //
-//  SettingsEmptyViewController.swift
+//  CreateAccount3ViewController.swift
 //  Dropbox
 //
-//  Created by Jared on 2/2/16.
+//  Created by Jared on 2/3/16.
 //  Copyright © 2016 plainspace. All rights reserved.
 //
 
 import UIKit
 
-class SettingsEmptyViewController: UIViewController {
-    
-    @IBOutlet weak var SettingsEmptyScrollView: UIScrollView!
-    
-    @IBOutlet weak var SettingsEmptySignOutButton: UIButton!
-    
-    
-    @IBAction func SettingsEmptySignOut(sender: AnyObject) {
-        
-        // make this button action sign out
-    }
+class CreateAccount3ViewController: UIViewController {
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        SettingsEmptyScrollView.contentSize = CGSize(width: 320, height: 972)
-        
+
         // Do any additional setup after loading the view.
     }
 

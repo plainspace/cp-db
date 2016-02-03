@@ -13,9 +13,12 @@ class NewAccountViewController: UIViewController {
     
     @IBOutlet weak var welcomeButton: UIButton!
     
-    @IBAction func welcomeButtonAction(sender: UIButton) {
+    @IBAction func welcomeButtonAction(sender: AnyObject) {
         
-        navigationController?.popToRootViewControllerAnimated(true)
+        dismissViewControllerAnimated(true, completion: nil) 
+        
+        // navigationController?.popToRootViewControllerAnimated(true)
+        //navigationController?.popViewControllerAnimated(true)
         
     }
     

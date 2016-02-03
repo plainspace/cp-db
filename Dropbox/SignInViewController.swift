@@ -10,6 +10,14 @@ import UIKit
 
 class SignInViewController: UIViewController {
 
+    @IBOutlet weak var WelcomeButton: UIButton!
+    
+    @IBAction func WelcomeButtonAction(sender: AnyObject) {
+    
+        // navigationController?.popToRootViewControllerAnimated(true)
+        navigationController?.popViewControllerAnimated(true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
