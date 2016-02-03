@@ -17,6 +17,8 @@ class SettingsEmptyViewController: UIViewController {
     
     @IBAction func SettingsEmptySignOut(sender: AnyObject) {
         
+        dismissViewControllerAnimated(true, completion: nil)
+        
         // make this button action sign out
     }
 

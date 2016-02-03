@@ -14,8 +14,10 @@ class SignInViewController: UIViewController {
     
     @IBAction func WelcomeButtonAction(sender: AnyObject) {
     
+        dismissViewControllerAnimated(true, completion: nil)
+    
         // navigationController?.popToRootViewControllerAnimated(true)
-        navigationController?.popViewControllerAnimated(true)
+        // navigationController?.popViewControllerAnimated(true)
     }
     
     override func viewDidLoad() {

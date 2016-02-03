@@ -10,6 +10,8 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
+    @IBOutlet weak var welcomeScrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
