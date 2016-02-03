@@ -5,11 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Welcome View Controller 1-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dropbox" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="BYZ-38-t0r" userLabel="Welcome View Controller 1" customClass="ViewController" customModule="Dropbox" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Welcome View 1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -42,11 +42,11 @@
             </objects>
             <point key="canvasLocation" x="-635" y="-86"/>
         </scene>
-        <!--View Controller-->
+        <!--Welcome View Controller 2-->
         <scene sceneID="5sv-Kh-yrf">
             <objects>
-                <viewController id="EQM-be-od3" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="uHQ-qO-7ba">
+                <viewController id="EQM-be-od3" userLabel="Welcome View Controller 2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uHQ-qO-7ba" userLabel="Welcome View 2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -107,11 +107,11 @@
             </objects>
             <point key="canvasLocation" x="-235" y="-785"/>
         </scene>
-        <!--View Controller-->
+        <!--Welcome View Controller 3-->
         <scene sceneID="bkC-fh-KTN">
             <objects>
-                <viewController id="boU-8g-wWc" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="oYg-Mn-Q1c">
+                <viewController id="boU-8g-wWc" userLabel="Welcome View Controller 3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oYg-Mn-Q1c" userLabel="Welcome View 3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -431,39 +431,10 @@
             </objects>
             <point key="canvasLocation" x="3152" y="3398"/>
         </scene>
-        <!--Root View Controller-->
-        <scene sceneID="rzM-iT-Uye">
-            <objects>
-                <tableViewController id="gfd-qx-BZ6" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="IAg-vR-qbX">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="HBN-UG-gLP">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HBN-UG-gLP" id="bLk-Q7-JRl">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="gfd-qx-BZ6" id="nOP-5I-fxY"/>
-                            <outlet property="delegate" destination="gfd-qx-BZ6" id="2F1-nL-WQt"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="iDH-b7-4GO"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tei-C3-KeD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4911" y="355"/>
-        </scene>
         <!--Settings-->
         <scene sceneID="ZsT-WI-2Cu">
             <objects>
-                <viewController id="7Me-ci-Oz7" customClass="SettingsViewController" customModule="Dropbox" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7Me-ci-Oz7" customClass="SettingsEmptyViewController" customModule="Dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SSc-0E-5oe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="772"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -479,6 +450,11 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zeM-3b-omr">
                                         <rect key="frame" x="0.0" y="692" width="320" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="SettingsEmptySignOUt:" destination="7Me-ci-Oz7" eventType="touchUpInside" id="vTX-eV-pbK"/>
+                                            <action selector="SettingsEmptySignOut:" destination="7Me-ci-Oz7" eventType="touchUpInside" id="sL8-8M-y5a"/>
+                                            <segue destination="5or-ny-JBN" kind="custom" id="irk-7p-NPU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </scrollView>
@@ -489,7 +465,8 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="772"/>
                     <connections>
-                        <outlet property="SettingsScrollView" destination="MCp-xR-8tm" id="pec-oS-159"/>
+                        <outlet property="SettingsEmptyScrollView" destination="MCp-xR-8tm" id="7Dt-x2-LjO"/>
+                        <outlet property="SettingsEmptySignOutButton" destination="zeM-3b-omr" id="bA2-wy-TyP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X5W-pd-ydh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1014,7 +991,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="inw-tX-uj3"/>
-        <segue reference="etj-zs-Rj4"/>
+        <segue reference="oCX-ni-eey"/>
+        <segue reference="irk-7p-NPU"/>
         <segue reference="IYx-xA-C6X"/>
     </inferredMetricsTieBreakers>
 </document>
