@@ -1,5 +1,5 @@
 //
-//  CreateAccountViewController.swift
+//  NewAccountViewController.swift
 //  Dropbox
 //
 //  Created by Jared on 2/2/16.
@@ -8,13 +8,19 @@
 
 import UIKit
 
-class CreateAccountViewController: UIViewController {
+class NewAccountViewController: UIViewController {
+    
+    
+    @IBOutlet weak var welcomeButton: UIButton!
+    
+    @IBAction func welcomeButtonAction(sender: UIButton) {
+        
+        navigationController?.popToRootViewControllerAnimated(true)
+        
+    }
     
     override func viewDidLoad() {
-        super.viewDidLoad()        
-    performSegueWithIdentifier("createAccountSegue", sender: self)
-        
-        navigationController!.popViewControllerAnimated(true)
+        super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
