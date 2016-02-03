@@ -309,7 +309,7 @@
         <!--Create Account View Controller Terms-->
         <scene sceneID="aLb-In-hyq">
             <objects>
-                <viewController id="YxY-Ra-Ndl" userLabel="Create Account View Controller Terms" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overFullScreen" id="YxY-Ra-Ndl" userLabel="Create Account View Controller Terms" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TlO-Hs-qLu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -479,12 +479,12 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sgh-4m-Znc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3864" y="991"/>
+            <point key="canvasLocation" x="4220" y="1271"/>
         </scene>
         <!--Create Account View Terms View Controller-->
         <scene sceneID="UZM-Gs-c8u">
             <objects>
-                <viewController id="zU0-dE-7VZ" userLabel="Create Account View Terms View Controller" sceneMemberID="viewController">
+                <viewController providesPresentationContextTransitionStyle="YES" id="zU0-dE-7VZ" userLabel="Create Account View Terms View Controller" customClass="CreateaccountViewTermsViewController" customModule="Dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9s1-fd-nBR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -495,16 +495,13 @@
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="terms" id="YC4-tB-eC3">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                        <autoresizingMask key="autoresizingMask"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nH9-sb-Sgg">
                                         <rect key="frame" x="258" y="28" width="62" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <segue destination="YxY-Ra-Ndl" kind="modal" id="oB2-TT-HAN">
-                                                <segue key="commit" inheritsFrom="parent" id="MsC-vh-Va3"/>
-                                                <segue key="preview" inheritsFrom="commit" id="ndl-8M-17P"/>
-                                            </segue>
+                                            <action selector="doneButton:" destination="zU0-dE-7VZ" eventType="touchUpInside" id="j04-qy-hH5"/>
                                         </connections>
                                     </button>
                                 </subviews>
