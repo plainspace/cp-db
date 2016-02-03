@@ -455,6 +455,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="yz2-qd-6Uq"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="320" height="900"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="722"/>
                 </viewController>
@@ -711,6 +712,13 @@
                                     <segue destination="YAz-ar-oCA" kind="modal" modalTransitionStyle="crossDissolve" id="fHf-gJ-smw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sCE-Yu-JZg">
+                                <rect key="frame" x="240" y="526" width="80" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="YAz-ar-oCA" kind="modal" modalTransitionStyle="crossDissolve" id="inw-tX-uj3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -859,7 +867,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2SM-Cl-NFB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1425" y="2499"/>
+            <point key="canvasLocation" x="1985" y="2492"/>
         </scene>
         <!--Files-->
         <scene sceneID="kc9-Ir-pwg">
@@ -966,6 +974,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="etj-zs-Rj4"/>
+        <segue reference="inw-tX-uj3"/>
         <segue reference="JZM-gO-LNg"/>
     </inferredMetricsTieBreakers>
 </document>
