@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="boU-8g-wWc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -68,17 +68,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aOy-P7-yby" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="438" y="355"/>
+            <point key="canvasLocation" x="423" y="346"/>
         </scene>
         <!--Welcome View Controller-->
         <scene sceneID="ByT-my-Owi">
             <objects>
-                <viewController id="mnP-vs-MvY" customClass="WelcomeViewController" customModule="Dropbox" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" id="mnP-vs-MvY" customClass="WelcomeViewController" customModule="Dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rJ8-0Z-G5k">
                         <rect key="frame" x="0.0" y="0.0" width="960" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="E8z-24-INc">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="E8z-24-INc">
                                 <rect key="frame" x="0.0" y="0.0" width="960" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -99,6 +99,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="960" height="568"/>
                 </viewController>
@@ -139,7 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vCl-TP-SeM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="780" y="355"/>
+            <point key="canvasLocation" x="811" y="346"/>
         </scene>
         <!--Create Account Root View Controller-->
         <scene sceneID="hWM-VG-uww">
@@ -360,7 +361,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0PI-3o-yqn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4220" y="2009"/>
+            <point key="canvasLocation" x="3096" y="3245"/>
         </scene>
         <!--Photos-->
         <scene sceneID="ISd-3C-u29">
@@ -381,7 +382,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s6U-rh-XS7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4980" y="2009"/>
+            <point key="canvasLocation" x="3856" y="3245"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="d1I-Gx-gap">
@@ -402,7 +403,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ztS-7u-3kk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4220" y="2690"/>
+            <point key="canvasLocation" x="3096" y="3926"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="rzM-iT-Uye">
@@ -436,18 +437,18 @@
         <!--Settings-->
         <scene sceneID="ZsT-WI-2Cu">
             <objects>
-                <viewController id="7Me-ci-Oz7" sceneMemberID="viewController">
+                <viewController id="7Me-ci-Oz7" customClass="SettingsViewController" customModule="Dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SSc-0E-5oe">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="722"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="MCp-xR-8tm">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="722"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="settings" id="FRV-c6-FiV">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="772"/>
-                                        <autoresizingMask key="autoresizingMask"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
                             </scrollView>
@@ -456,12 +457,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="yz2-qd-6Uq"/>
                     <value key="contentSizeForViewInPopover" type="size" width="320" height="900"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="722"/>
+                    <connections>
+                        <outlet property="SettingsScrollView" destination="MCp-xR-8tm" id="pec-oS-159"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X5W-pd-ydh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4980" y="2767"/>
+            <point key="canvasLocation" x="3864" y="3926"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="DtT-JF-CCW">
@@ -482,7 +484,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sgh-4m-Znc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4220" y="1271"/>
+            <point key="canvasLocation" x="3096" y="2507"/>
         </scene>
         <!--Create Account View Terms View Controller-->
         <scene sceneID="UZM-Gs-c8u">
@@ -627,7 +629,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pIA-5Z-iTV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3873" y="2009"/>
+            <point key="canvasLocation" x="2749" y="3245"/>
         </scene>
         <!--Photos-->
         <scene sceneID="Hgy-Mx-gW7">
@@ -646,7 +648,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SlQ-Av-Nj8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4630" y="2009"/>
+            <point key="canvasLocation" x="3506" y="3245"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="QnZ-3E-Am8">
@@ -665,7 +667,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QHE-LU-tDx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3873" y="2690"/>
+            <point key="canvasLocation" x="2749" y="3926"/>
         </scene>
         <!--Settings-->
         <scene sceneID="6Tp-rN-22a">
@@ -684,7 +686,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZOQ-Ll-eBM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4630" y="2690"/>
+            <point key="canvasLocation" x="3506" y="3926"/>
         </scene>
         <!--Sign In View Controller 2-->
         <scene sceneID="jgI-6j-5gf">
@@ -822,18 +824,18 @@
         <!--Settings-->
         <scene sceneID="fcu-yy-In3">
             <objects>
-                <viewController id="cna-e4-LRB" sceneMemberID="viewController">
+                <viewController id="cna-e4-LRB" customClass="SettingsExistingViewController" customModule="Dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D8Z-Ls-0sR">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="722"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="iFI-Dl-nfx">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="722"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="settings" id="aDP-FX-0cw">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="settings" id="Y7X-gk-gkf">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="772"/>
-                                        <autoresizingMask key="autoresizingMask"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
                             </scrollView>
@@ -841,12 +843,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="qpY-ir-k91"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="722"/>
+                    <connections>
+                        <outlet property="SettingsExistingScrollView" destination="iFI-Dl-nfx" id="48W-82-LBj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2tg-YS-XR8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2185" y="4003"/>
+            <point key="canvasLocation" x="2195" y="3926"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="uDL-Rb-Nyn">
@@ -975,6 +978,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="etj-zs-Rj4"/>
         <segue reference="inw-tX-uj3"/>
-        <segue reference="JZM-gO-LNg"/>
+        <segue reference="IYx-xA-C6X"/>
     </inferredMetricsTieBreakers>
 </document>
