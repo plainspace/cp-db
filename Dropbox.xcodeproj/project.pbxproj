@@ -107,20 +107,20 @@
 		7F1E79AF1C610D0B005A80D4 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				7F0680A71C631A9900AB20E9 /* SignIn2ViewController.swift */,
-				7F0680581C6259A000AB20E9 /* CreateAccount5ViewController.swift */,
+				7FA143B01C611434007A7422 /* CreateAccountViewController.swift */,
 				7F0680521C62597E00AB20E9 /* CreateAccount2ViewController.swift */,
 				7F0680541C62598600AB20E9 /* CreateAccount3ViewController.swift */,
 				7F0680561C62598D00AB20E9 /* CreateAccount4ViewController.swift */,
-				7F2DAB7D1C61A89300CE70F1 /* SettingsExistingViewController.swift */,
-				7F0680501C61C17900AB20E9 /* SettingsEmptyViewController.swift */,
+				7F0680581C6259A000AB20E9 /* CreateAccount5ViewController.swift */,
+				7F2DAB751C6191CA00CE70F1 /* CreateaccountViewTermsViewController.swift */,
 				7F2DAB7F1C61B86C00CE70F1 /* NewAccountViewController.swift */,
 				7F2DAB7B1C61A82D00CE70F1 /* SettingsViewController.swift */,
-				7F2DAB791C61959600CE70F1 /* SignInTroubleViewController.swift */,
-				7F2DAB771C61957200CE70F1 /* SignInViewController.swift */,
-				7F2DAB751C6191CA00CE70F1 /* CreateaccountViewTermsViewController.swift */,
-				7FA143B01C611434007A7422 /* CreateAccountViewController.swift */,
+				7F0680501C61C17900AB20E9 /* SettingsEmptyViewController.swift */,
+				7F2DAB7D1C61A89300CE70F1 /* SettingsExistingViewController.swift */,
 				7FA143AE1C611414007A7422 /* SignInRootViewController.swift */,
+				7F2DAB771C61957200CE70F1 /* SignInViewController.swift */,
+				7F0680A71C631A9900AB20E9 /* SignIn2ViewController.swift */,
+				7F2DAB791C61959600CE70F1 /* SignInTroubleViewController.swift */,
 				7F1E79AD1C610D01005A80D4 /* WelcomeViewController.swift */,
 			);
 			name = "View Controllers";
