@@ -13,7 +13,9 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var WelcomeButton: UIButton!
     
     @IBAction func WelcomeButtonAction(sender: AnyObject) {
-    
+        
+        EmailField.resignFirstResponder()
+        
         dismissViewControllerAnimated(true, completion: nil)
     
         // navigationController?.popToRootViewControllerAnimated(true)
@@ -28,17 +30,25 @@ class SignInViewController: UIViewController {
         
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         EmailField.becomeFirstResponder()
         
+        EmailField.resignFirstResponder()
+        
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
 
-
+        
+        if PasswordField.text!.isEmpty {
+            SignInButton.enabled = false
+        }
+        else {
+            SignInButton.enabled = true
+        }
+        
         // Do any additional setup after loading the view.
     }
 
@@ -54,19 +64,7 @@ class SignInViewController: UIViewController {
     
     @IBAction func didPressSignin(sender: UIButton) {
     
-        if EmailField.text!.isEmpty || PasswordField.text!.isEmpty {
-            
-            SignInButton.enabled = false
-            
-        }
-        else {
-            
-            SignInButton.enabled = true
-            
-        }
-        
     }
-    
     
     @IBOutlet weak var EmailField: UITextField!
     
@@ -76,9 +74,12 @@ class SignInViewController: UIViewController {
         
         if EmailField.text!.isEmpty || PasswordField.text!.isEmpty {
             
-           SignInButton.enabled = false
+            // SignInButton.userInteractionEnabled = false
+            
+            SignInButton.enabled = false
             
         }
+        
         else {
             
             SignInButton.enabled = true

@@ -581,9 +581,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wcg-5w-tbB">
                                 <rect key="frame" x="0.0" y="99" width="320" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="6Hq-Qu-T1d" kind="modal" animates="NO" modalTransitionStyle="crossDissolve" id="1hY-iW-Wy6"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kQo-9Z-rlH">
                                 <rect key="frame" x="0.0" y="26" width="104" height="30"/>
@@ -600,7 +597,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                 <state key="normal" title="Sign In"/>
                                 <state key="disabled">
-                                    <color key="titleColor" red="0.050980392156862744" green="0.40000000000000002" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="didPressSignin:" destination="Uwa-Ux-IIr" eventType="touchUpInside" id="RrO-lq-eU5"/>
@@ -640,12 +637,20 @@
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                         <connections>
+                                            <action selector="EmailEditingChanged:" destination="Uwa-Ux-IIr" eventType="editingDidEnd" id="NMf-Hs-4pH"/>
                                             <action selector="EmailEditingChanged:" destination="Uwa-Ux-IIr" eventType="editingChanged" id="S0P-OF-Dd3"/>
                                         </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UPr-TY-XeY">
+                                <rect key="frame" x="0.0" y="187" width="320" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="zm7-dd-JlJ" kind="modal" modalTransitionStyle="crossDissolve" id="xDn-5W-9yx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -755,48 +760,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZOQ-Ll-eBM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3562" y="3398"/>
-        </scene>
-        <!--Sign In View Controller 2-->
-        <scene sceneID="jgI-6j-5gf">
-            <objects>
-                <viewController id="6Hq-Qu-T1d" userLabel="Sign In View Controller 2" customClass="SignIn2ViewController" customModule="Dropbox" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3wN-G5-59S">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sign_in2" id="7wc-gm-wHn">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Gbe-wu-fqY">
-                                <rect key="frame" x="0.0" y="190" width="320" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="zm7-dd-JlJ" kind="modal" modalTransitionStyle="crossDissolve" id="njf-Jj-5OL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="p51-ww-bkU">
-                                <rect key="frame" x="240" y="20" width="80" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="YAz-ar-oCA" kind="modal" modalTransitionStyle="crossDissolve" id="fHf-gJ-smw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sCE-Yu-JZg">
-                                <rect key="frame" x="240" y="526" width="80" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="YAz-ar-oCA" kind="modal" modalTransitionStyle="crossDissolve" id="inw-tX-uj3"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="LR8-gn-Weh"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W9c-RQ-GGp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2118" y="1879"/>
         </scene>
         <!--Sign In View Controller 3-->
         <scene sceneID="kfi-qM-nzC">
@@ -1059,7 +1022,6 @@
         <image name="settings" width="320" height="772"/>
         <image name="settings_tab" width="30" height="30"/>
         <image name="sign_in1" width="320" height="568"/>
-        <image name="sign_in2" width="320" height="568"/>
         <image name="sign_in3" width="320" height="568"/>
         <image name="terms" width="320" height="568"/>
         <image name="welcome1" width="320" height="568"/>
@@ -1067,7 +1029,6 @@
         <image name="welcome3" width="320" height="568"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Y8N-Fx-QjY"/>
         <segue reference="etj-zs-Rj4"/>
         <segue reference="CjC-W5-FZG"/>
         <segue reference="prX-Ok-P6K"/>
