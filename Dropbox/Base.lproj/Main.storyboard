@@ -958,10 +958,10 @@
         <image name="welcome3" width="320" height="568"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="etj-zs-Rj4"/>
         <segue reference="inw-tX-uj3"/>
-        <segue reference="prX-Ok-P6K"/>
+        <segue reference="oCX-ni-eey"/>
         <segue reference="o8R-xS-bHa"/>
-        <segue reference="o2W-wX-2ir"/>
+        <segue reference="prX-Ok-P6K"/>
+        <segue reference="CjC-W5-FZG"/>
     </inferredMetricsTieBreakers>
 </document>
