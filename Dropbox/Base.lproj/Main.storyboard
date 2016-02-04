@@ -50,6 +50,45 @@
                                             <segue destination="8fv-BY-4uy" kind="modal" id="7e8-sV-sFl"/>
                                         </connections>
                                     </button>
+                                    <view contentMode="scaleToFill" id="1Zd-cr-QNo">
+                                        <rect key="frame" x="128" y="501" width="65" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="ueg-1m-1mi">
+                                                <rect key="frame" x="13" y="0.0" width="39" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="pageIndicatorTintColor" red="0.66274509803921566" green="0.81960784313725488" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="currentPageIndicatorTintColor" red="0.050980392159999999" green="0.40000000000000002" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </pageControl>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.9560583233833313" green="0.98017710447311401" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="qyf-nY-aSd">
+                                        <rect key="frame" x="448" y="501" width="65" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" id="BCU-uU-4ru">
+                                                <rect key="frame" x="13" y="0.0" width="39" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="pageIndicatorTintColor" red="0.66274509800000003" green="0.81960784310000001" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="currentPageIndicatorTintColor" red="0.050980392159999999" green="0.40000000000000002" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </pageControl>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.9560583233833313" green="0.98017710447311401" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="RFF-Ya-bfg">
+                                        <rect key="frame" x="768" y="501" width="65" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="2" id="lN0-28-4Pr">
+                                                <rect key="frame" x="13" y="0.0" width="39" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="pageIndicatorTintColor" red="0.66274509800000003" green="0.81960784310000001" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="currentPageIndicatorTintColor" red="0.050980392159999999" green="0.40000000000000002" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </pageControl>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.9560583233833313" green="0.98017710447311401" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -554,11 +593,67 @@
                                     <action selector="welcomeButtonAction:" destination="3Pm-A2-jB0" eventType="touchUpInside" id="tP6-DR-jee"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5tf-4D-yga">
+                                <rect key="frame" x="253" y="28" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274509803926" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="Sign In"/>
+                                <state key="disabled">
+                                    <color key="titleColor" red="0.050980392156862744" green="0.40000000000000002" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressSignin:" destination="Uwa-Ux-IIr" eventType="touchUpInside" id="RrO-lq-eU5"/>
+                                    <segue destination="YAz-ar-oCA" kind="modal" id="Y8N-Fx-QjY"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" id="jRX-d7-KWI">
+                                <rect key="frame" x="0.0" y="99" width="320" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" id="Gga-zq-ieW">
+                                        <rect key="frame" x="117" y="7" width="202" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="EmailEditingChanged:" destination="Uwa-Ux-IIr" eventType="editingChanged" id="9Sf-yk-2ZP"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Rpk-Va-uN4">
+                                        <rect key="frame" x="15" y="12" width="92" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.19997376203536987" green="0.20001503825187683" blue="0.19997116923332214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QJT-oc-ifq">
+                                        <rect key="frame" x="15" y="56" width="94" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.19997376203536987" green="0.20001503825187683" blue="0.19997116923332214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" id="DWM-dZ-gSp">
+                                        <rect key="frame" x="117" y="51" width="202" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <connections>
+                                            <action selector="EmailEditingChanged:" destination="Uwa-Ux-IIr" eventType="editingChanged" id="S0P-OF-Dd3"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="uZ8-xd-tDl"/>
                     <connections>
+                        <outlet property="EmailField" destination="Gga-zq-ieW" id="30w-fR-ulW"/>
+                        <outlet property="PasswordField" destination="DWM-dZ-gSp" id="5VK-kH-m5l"/>
+                        <outlet property="SignInButton" destination="5tf-4D-yga" id="2qH-Bj-qBG"/>
                         <outlet property="WelcomeButton" destination="kQo-9Z-rlH" id="STa-ex-50i"/>
                     </connections>
                 </viewController>
@@ -701,7 +796,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W9c-RQ-GGp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2118" y="1665"/>
+            <point key="canvasLocation" x="2118" y="1879"/>
         </scene>
         <!--Sign In View Controller 3-->
         <scene sceneID="kfi-qM-nzC">
@@ -750,7 +845,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="APX-46-xKq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="573" y="3942"/>
+            <point key="canvasLocation" x="541" y="2894"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Dkw-IG-tTy">
@@ -764,7 +859,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qUr-0s-WuO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="573" y="4582"/>
+            <point key="canvasLocation" x="473" y="4590"/>
         </scene>
         <!--Photos-->
         <scene sceneID="pnu-oC-tRK">
@@ -785,7 +880,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w6q-kM-HHG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2321" y="3261"/>
+            <point key="canvasLocation" x="1305" y="3917"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="wOA-6B-C7j">
@@ -806,7 +901,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kIt-h9-9aC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1561" y="3942"/>
+            <point key="canvasLocation" x="473" y="3942"/>
         </scene>
         <!--Settings-->
         <scene sceneID="fcu-yy-In3">
@@ -845,7 +940,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2tg-YS-XR8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2321" y="4044"/>
+            <point key="canvasLocation" x="2113" y="4028"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="uDL-Rb-Nyn">
@@ -866,7 +961,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2SM-Cl-NFB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2121" y="2508"/>
+            <point key="canvasLocation" x="1614" y="2894"/>
         </scene>
         <!--Files-->
         <scene sceneID="kc9-Ir-pwg">
@@ -885,7 +980,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Jq-YJ-d2V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="166" y="3942"/>
+            <point key="canvasLocation" x="134" y="2894"/>
         </scene>
         <!--Photos-->
         <scene sceneID="2rn-8i-LgK">
@@ -904,7 +999,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jgu-4X-Qxr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1971" y="3261"/>
+            <point key="canvasLocation" x="955" y="3917"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="C5i-Pe-Fg7">
@@ -923,7 +1018,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qd8-qk-r56" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1214" y="3942"/>
+            <point key="canvasLocation" x="126" y="3942"/>
         </scene>
         <!--Settings-->
         <scene sceneID="nZY-nX-wFH">
@@ -942,7 +1037,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g5B-s1-8Mp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1971" y="3942"/>
+            <point key="canvasLocation" x="1763" y="3926"/>
         </scene>
     </scenes>
     <resources>
@@ -972,10 +1067,10 @@
         <image name="welcome3" width="320" height="568"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="inw-tX-uj3"/>
-        <segue reference="oCX-ni-eey"/>
-        <segue reference="o8R-xS-bHa"/>
-        <segue reference="prX-Ok-P6K"/>
+        <segue reference="Y8N-Fx-QjY"/>
+        <segue reference="etj-zs-Rj4"/>
         <segue reference="CjC-W5-FZG"/>
+        <segue reference="prX-Ok-P6K"/>
+        <segue reference="o8R-xS-bHa"/>
     </inferredMetricsTieBreakers>
 </document>
