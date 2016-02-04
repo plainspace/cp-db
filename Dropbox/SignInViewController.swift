@@ -15,6 +15,7 @@ class SignInViewController: UIViewController {
     @IBAction func WelcomeButtonAction(sender: AnyObject) {
         
         EmailField.resignFirstResponder()
+        PasswordField.resignFirstResponder()
         
         dismissViewControllerAnimated(true, completion: nil)
     
