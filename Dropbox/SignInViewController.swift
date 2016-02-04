@@ -74,9 +74,7 @@ class SignInViewController: UIViewController {
     @IBAction func EmailEditingChanged(sender: AnyObject) {
         
         if EmailField.text!.isEmpty || PasswordField.text!.isEmpty {
-            
-            // SignInButton.userInteractionEnabled = false
-            
+                        
             SignInButton.enabled = false
             
         }
