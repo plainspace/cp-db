@@ -15,7 +15,7 @@ The purpose of this homework is to use Xcode to implement the flow between the s
   - [x] User can tap the area for "Having trouble signing in?"
   - [x] User can log out from the Settings screen.
 - [ ] Optional: Add a detail view for one of the files and implement favoriting the file. Configure a Button
-- [ ] Optional: Add UITextFields for the forms so you can actually type in them and handle dismissing the keyboard. Dismissing the Keyboard
+- [x] Optional: Add UITextFields for the forms so you can actually type in them and handle dismissing the keyboard. Dismissing the Keyboard
 - [x] Optional: You should be able to swipe through the welcome screens instead of just tapping them.
   - [x] Create a custom free form view controller that is wide enough for 4 screens. Creating Custom View Controllers, Creating a Free Form View Controller
   - [x] Add a UIScrollView with paging enabled.
