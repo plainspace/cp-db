@@ -1,21 +1,17 @@
 //
-//  CreateAccountViewController.swift
+//  SignIn2ViewController.swift
 //  Dropbox
 //
-//  Created by Jared on 2/2/16.
+//  Created by Jared on 2/3/16.
 //  Copyright © 2016 plainspace. All rights reserved.
 //
 
 import UIKit
 
-class CreateAccountViewController: UIViewController {
-    
+class SignIn2ViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        performSegueWithIdentifier("createAccountSegue", sender: self)
-        
-        // navigationController!.popViewControllerAnimated(true)
 
         // Do any additional setup after loading the view.
     }

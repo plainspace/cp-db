@@ -12,17 +12,6 @@ class SettingsEmptyViewController: UIViewController {
     
     @IBOutlet weak var SettingsEmptyScrollView: UIScrollView!
     
-    @IBOutlet weak var SettingsEmptySignOutButton: UIButton!
-    
-    
-    @IBAction func SettingsEmptySignOut(sender: AnyObject) {
-        
-        dismissViewControllerAnimated(true, completion: nil)
-        
-        // make this button action sign out
-    }
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

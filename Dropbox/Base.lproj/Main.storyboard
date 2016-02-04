@@ -394,8 +394,7 @@
                                         <rect key="frame" x="0.0" y="692" width="320" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <action selector="SettingsEmptySignOUt:" destination="7Me-ci-Oz7" eventType="touchUpInside" id="vTX-eV-pbK"/>
-                                            <action selector="SettingsEmptySignOut:" destination="7Me-ci-Oz7" eventType="touchUpInside" id="sL8-8M-y5a"/>
+                                            <segue destination="dHY-R5-TKE" kind="modal" id="o2W-wX-2ir"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -408,7 +407,6 @@
                     <size key="freeformSize" width="320" height="772"/>
                     <connections>
                         <outlet property="SettingsEmptyScrollView" destination="MCp-xR-8tm" id="7Dt-x2-LjO"/>
-                        <outlet property="SettingsEmptySignOutButton" destination="zeM-3b-omr" id="bA2-wy-TyP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X5W-pd-ydh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -666,7 +664,7 @@
         <!--Sign In View Controller 2-->
         <scene sceneID="jgI-6j-5gf">
             <objects>
-                <viewController id="6Hq-Qu-T1d" userLabel="Sign In View Controller 2" sceneMemberID="viewController">
+                <viewController id="6Hq-Qu-T1d" userLabel="Sign In View Controller 2" customClass="SignIn2ViewController" customModule="Dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3wN-G5-59S">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -815,6 +813,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Wlc-x1-Tqs">
                                         <rect key="frame" x="0.0" y="692" width="320" height="42"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="dHY-R5-TKE" kind="modal" id="CjC-W5-FZG"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </scrollView>
@@ -957,9 +958,10 @@
         <image name="welcome3" width="320" height="568"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="etj-zs-Rj4"/>
         <segue reference="inw-tX-uj3"/>
-        <segue reference="Ndi-VG-2a8"/>
+        <segue reference="prX-Ok-P6K"/>
         <segue reference="o8R-xS-bHa"/>
-        <segue reference="EUE-D6-ZfZ"/>
+        <segue reference="o2W-wX-2ir"/>
     </inferredMetricsTieBreakers>
 </document>
