@@ -905,24 +905,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="existing_files" id="pnu-QC-Fdg">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="existing_files_1" id="nGw-fX-bRy">
                                 <rect key="frame" x="0.0" y="65" width="320" height="454"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="60x-Lp-5bT">
-                                <rect key="frame" x="157" y="384" width="84" height="25"/>
+                            <view contentMode="scaleToFill" id="QRi-xI-LLn">
+                                <rect key="frame" x="0.0" y="476" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
-                                <state key="normal" title="like" image="favorite_btn">
-                                    <color key="titleColor" red="0.0" green="0.1333333333" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="selected" image="favorited_btn">
-                                    <color key="titleColor" red="0.22352941179999999" green="0.66274509800000003" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="LikeButton:" destination="FYc-lj-uLA" eventType="touchUpInside" id="6KY-p1-7xG"/>
-                                </connections>
-                            </button>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="60x-Lp-5bT">
+                                        <rect key="frame" x="13" y="9" width="166" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Favorite" image="favorite_btn">
+                                            <color key="titleColor" red="0.23634442687034607" green="0.7187379002571106" blue="0.91480094194412231" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="selected" image="favorited_btn">
+                                            <color key="titleColor" red="0.22352941179999999" green="0.66274509800000003" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="LikeButton:" destination="FYc-lj-uLA" eventType="touchUpInside" id="6KY-p1-7xG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1122,6 +1130,7 @@
         <image name="empty_files" width="320" height="454"/>
         <image name="empty_photos" width="320" height="454"/>
         <image name="existing_files" width="320" height="454"/>
+        <image name="existing_files_1" width="320" height="454"/>
         <image name="existing_photos" width="320" height="725"/>
         <image name="favorite_btn" width="26" height="25"/>
         <image name="favorited_btn" width="26" height="25"/>
