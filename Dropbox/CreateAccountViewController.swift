@@ -10,8 +10,17 @@ import UIKit
 
 class CreateAccountViewController: UIViewController {
     
+    func keyboardWillShow(notificaiton: NSNotification!) {
+        
+    }
+    
+    func keyboardWillHide(notificaiton: NSNotification!) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         performSegueWithIdentifier("createAccountSegue", sender: self)
         

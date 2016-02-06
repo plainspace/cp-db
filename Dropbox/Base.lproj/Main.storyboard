@@ -161,6 +161,61 @@
                                     <segue destination="8SX-iw-lgM" kind="modal" animates="NO" modalTransitionStyle="crossDissolve" id="fNT-1Z-9NU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ona-0L-Awk">
+                                <rect key="frame" x="0.0" y="27" width="104" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="welcomeButtonAction:" destination="3Pm-A2-jB0" eventType="touchUpInside" id="Kdq-VD-rx0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JeQ-P8-aSZ">
+                                <rect key="frame" x="258" y="28" width="62" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="Create"/>
+                                <state key="disabled">
+                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="DidPressCreateButton:" destination="3Pm-A2-jB0" eventType="touchUpInside" id="UdJ-aM-cZN"/>
+                                    <action selector="didPressSignin:" destination="Uwa-Ux-IIr" eventType="touchUpInside" id="ZG5-DN-HWb"/>
+                                    <segue destination="2gd-Fi-XRg" kind="modal" modalTransitionStyle="crossDissolve" id="VAW-yv-hpk"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" id="cRR-yV-eQN">
+                                <rect key="frame" x="0.0" y="79" width="320" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="John" textAlignment="natural" minimumFontSize="17" id="896-bb-M1d">
+                                        <rect key="frame" x="117" y="7" width="202" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sn7-Pf-VQN">
+                                        <rect key="frame" x="15" y="12" width="92" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.199973762" green="0.2000150383" blue="0.19997116919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dbY-Ru-UU7">
+                                        <rect key="frame" x="15" y="56" width="94" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.199973762" green="0.2000150383" blue="0.19997116919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Appleseed" textAlignment="natural" minimumFontSize="17" id="tSJ-lJ-ehn">
+                                        <rect key="frame" x="117" y="51" width="202" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                             <view contentMode="scaleToFill" id="La3-BT-WC4">
                                 <rect key="frame" x="0.0" y="166" width="320" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -170,9 +225,6 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="EmailEditingChanged:" destination="Uwa-Ux-IIr" eventType="editingChanged" id="qwR-50-DtP"/>
-                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gs4-y7-ZP1">
                                         <rect key="frame" x="15" y="12" width="92" height="21"/>
@@ -194,55 +246,7 @@
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                         <connections>
-                                            <action selector="EmailEditingChanged:" destination="Uwa-Ux-IIr" eventType="editingChanged" id="Bso-Ka-7fd"/>
-                                            <action selector="EmailEditingChanged:" destination="Uwa-Ux-IIr" eventType="editingDidEnd" id="HDp-D2-78S"/>
-                                        </connections>
-                                    </textField>
-                                </subviews>
-                                <color key="backgroundColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ona-0L-Awk">
-                                <rect key="frame" x="0.0" y="27" width="104" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="welcomeButtonAction:" destination="3Pm-A2-jB0" eventType="touchUpInside" id="Kdq-VD-rx0"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" id="cRR-yV-eQN">
-                                <rect key="frame" x="0.0" y="79" width="320" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="John" textAlignment="natural" minimumFontSize="17" id="896-bb-M1d">
-                                        <rect key="frame" x="117" y="7" width="202" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="EmailEditingChanged:" destination="Uwa-Ux-IIr" eventType="editingChanged" id="chp-0q-Biy"/>
-                                        </connections>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sn7-Pf-VQN">
-                                        <rect key="frame" x="15" y="12" width="92" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" red="0.199973762" green="0.2000150383" blue="0.19997116919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dbY-Ru-UU7">
-                                        <rect key="frame" x="15" y="56" width="94" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" red="0.199973762" green="0.2000150383" blue="0.19997116919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Appleseed" textAlignment="natural" minimumFontSize="17" id="tSJ-lJ-ehn">
-                                        <rect key="frame" x="117" y="51" width="202" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                        <connections>
-                                            <action selector="EmailEditingChanged:" destination="Uwa-Ux-IIr" eventType="editingDidEnd" id="Bkr-cB-9qY"/>
-                                            <action selector="EmailEditingChanged:" destination="Uwa-Ux-IIr" eventType="editingChanged" id="nIg-T2-hZQ"/>
+                                            <action selector="PasswordEditingChanged:" destination="3Pm-A2-jB0" eventType="editingChanged" id="UsM-OH-06Q"/>
                                         </connections>
                                     </textField>
                                 </subviews>
@@ -253,6 +257,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="EO9-H3-Bwo"/>
                     <connections>
+                        <outlet property="CreateButton" destination="JeQ-P8-aSZ" id="e5U-wA-NET"/>
+                        <outlet property="EmailField" destination="fiv-4j-42M" id="vh0-9t-rDp"/>
+                        <outlet property="FirstNameField" destination="896-bb-M1d" id="JBe-pb-lto"/>
+                        <outlet property="LastNameField" destination="tSJ-lJ-ehn" id="7GQ-xd-tbq"/>
+                        <outlet property="PasswordField" destination="Z1f-sm-PkX" id="iLc-Xr-jI3"/>
                         <outlet property="welcomeButton" destination="ona-0L-Awk" id="RMN-vk-t0L"/>
                     </connections>
                 </viewController>
@@ -867,7 +876,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YnF-hM-LRs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2841" y="991"/>
+            <point key="canvasLocation" x="2973" y="1015"/>
         </scene>
         <!--Files-->
         <scene sceneID="fOx-Zb-QWZ">
@@ -900,21 +909,17 @@
         <!--File Detail View Controller-->
         <scene sceneID="Dkw-IG-tTy">
             <objects>
-                <viewController id="FYc-lj-uLA" customClass="FileDetailViewController" customModule="Dropbox" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="FYc-lj-uLA" customClass="FileDetailViewController" customModule="Dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GOW-0W-s3V">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="existing_files_1" id="nGw-fX-bRy">
-                                <rect key="frame" x="0.0" y="65" width="320" height="454"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
                             <view contentMode="scaleToFill" id="QRi-xI-LLn">
-                                <rect key="frame" x="0.0" y="476" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="60x-Lp-5bT">
-                                        <rect key="frame" x="13" y="9" width="166" height="25"/>
+                                        <rect key="frame" x="13" y="9" width="179" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -931,6 +936,10 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="existing_files_1" id="nGw-fX-bRy">
+                                <rect key="frame" x="0.0" y="70" width="320" height="454"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1152,5 +1161,6 @@
         <segue reference="CjC-W5-FZG"/>
         <segue reference="prX-Ok-P6K"/>
         <segue reference="o8R-xS-bHa"/>
+        <segue reference="VAW-yv-hpk"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -9,6 +9,30 @@
 import UIKit
 
 class SignInViewController: UIViewController {
+    
+    @IBOutlet weak var SignInButton: UIButton!
+    @IBAction func didPressSignin(sender: UIButton) {
+        
+    }
+    
+    @IBOutlet weak var EmailField: UITextField!
+    @IBOutlet weak var PasswordField: UITextField!
+    
+    @IBAction func EmailEditingChanged(sender: AnyObject) {
+        
+        if EmailField.text!.isEmpty || PasswordField.text!.isEmpty {
+            
+            SignInButton.enabled = false
+            
+        }
+            
+        else {
+            
+            SignInButton.enabled = true
+            
+        }
+        
+    }
 
     @IBOutlet weak var WelcomeButton: UIButton!
     
@@ -36,7 +60,7 @@ class SignInViewController: UIViewController {
         
         EmailField.becomeFirstResponder()
         
-        EmailField.resignFirstResponder()
+        // EmailField.resignFirstResponder()
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
         
@@ -59,34 +83,6 @@ class SignInViewController: UIViewController {
         
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    @IBOutlet weak var SignInButton: UIButton!
-    
-    @IBAction func didPressSignin(sender: UIButton) {
-    
-    }
-    
-    @IBOutlet weak var EmailField: UITextField!
-    
-    @IBOutlet weak var PasswordField: UITextField!
-    
-    @IBAction func EmailEditingChanged(sender: AnyObject) {
-        
-        if EmailField.text!.isEmpty || PasswordField.text!.isEmpty {
-                        
-            SignInButton.enabled = false
-            
-        }
-        
-        else {
-            
-            SignInButton.enabled = true
-            
-        }
-        
-    }
-    
 
     /*
     // MARK: - Navigation
