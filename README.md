@@ -1,10 +1,9 @@
 # Week 1 Project: Dropbox
-_Due:_ Sunday, February 7th at 11:59pm
+_Due:_ Sunday, February 7th at 11:59pm  
+_Time spent:_ 14 hrs
 
 ## Overview
 The purpose of this homework is to use Xcode to implement the flow between the screens of an application. We're going to use the techniques from this week to implement the Dropbox app from the signed out state to the basic signed in state.
-
-Time spent: 14 hrs
 
 ## Project Requirements
 - [x] User can tap through the 3 welcome screens.
