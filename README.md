@@ -4,7 +4,7 @@ _Due:_ Sunday, February 7th at 11:59pm
 ## Overview
 The purpose of this homework is to use Xcode to implement the flow between the screens of an application. We're going to use the techniques from this week to implement the Dropbox app from the signed out state to the basic signed in state.
 
-Time spent: x hrs
+Time spent: 14 hrs
 
 ## Project Requirements
 - [x] User can tap through the 3 welcome screens.
@@ -18,10 +18,10 @@ Time spent: x hrs
   - [x] User can log out from the Settings screen.
 
 ## Project Optionals
-- [ ] Optional: Add a detail view for one of the files and implement favoriting the file. Configure a Button
-- [x] Optional: Add UITextFields for the forms so you can actually type in them and handle dismissing the keyboard. Dismissing the Keyboard
+- [x] Optional: Add a detail view for one of the files and implement favoriting the file.
+- [x] Optional: Add UITextFields for the forms so you can actually type in them and handle dismissing the keyboard.
 - [x] Optional: You should be able to swipe through the welcome screens instead of just tapping them.
-  - [x] Create a custom free form view controller that is wide enough for 4 screens. Creating Custom View Controllers, Creating a Free Form View Controller
+  - [x] Create a custom free form view controller that is wide enough for 4 screens.
   - [x] Add a UIScrollView with paging enabled.
   - [x] Add 4 UIImageViews for the welcome screens.
 
