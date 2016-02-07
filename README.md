@@ -25,6 +25,10 @@ Time spent: x hrs
   - [x] Add a UIScrollView with paging enabled.
   - [x] Add 4 UIImageViews for the welcome screens.
 
+## Extracurriculars
+
+- [x] Add Page View Controllers to Welcome Screen Scroll View
+
 ## GIF
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).

@@ -1,29 +1,15 @@
 //
-//  FileDetailViewController.swift
+//  FavoritedViewController.swift
 //  Dropbox
 //
-//  Created by Jared on 2/4/16.
+//  Created by Jared on 2/6/16.
 //  Copyright © 2016 plainspace. All rights reserved.
 //
 
 import UIKit
 
-class FileDetailViewController: UIViewController {
-    
-    @IBAction func LikeButton(sender: UIButton) {
-        if sender.selected == false {
-            sender.selected = true
-        }
-        else {
-            sender.selected = false
-        }
-        
-        let favorites = NSUserDefaults.standardUserDefaults()
-        favorites.setBool(true, forKey: "favorited")
-        favorites.synchronize()
-        
-    }
-    
+class FavoritedViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
