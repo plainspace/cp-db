@@ -11,6 +11,7 @@ import UIKit
 class FileDetailViewController: UIViewController {
     
     @IBAction func LikeButton(sender: UIButton) {
+    
         if sender.selected == false {
             sender.selected = true
         }
@@ -21,6 +22,16 @@ class FileDetailViewController: UIViewController {
         let favorites = NSUserDefaults.standardUserDefaults()
         favorites.setBool(true, forKey: "favorited")
         favorites.synchronize()
+        
+        let favorited = favorites.boolForKey("favorited")
+        
+        if favorites.boolForKey("true"){
+            // Perform some action
+            print("true")
+        }
+        else {
+            print("false")
+        }
         
     }
     

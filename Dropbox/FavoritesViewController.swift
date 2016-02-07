@@ -13,20 +13,18 @@ class FavoritesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let favorites = NSUserDefaults.standardUserDefaults()
-//        favorites.setBool(true, forKey: "favorited")
-//        favorites.synchronize()
-        
-        
         let favorites = NSUserDefaults.standardUserDefaults()
+        
+        favorites.synchronize()
         
         let favorited = favorites.boolForKey("favorited")
         
-        if favorites.boolForKey(true)!.isEmpty {
-            // show favorites view
+        if favorites.boolForKey("true"){
+            // Perform some action
+            print("true")
         }
         else {
-            // show blank favorites view
+            print("false")
         }
         
         // Do any additional setup after loading the view.
