@@ -10,26 +10,29 @@ import UIKit
 
 class FavoritesViewController: UIViewController {
 
+    var favState :Bool = false
+    
+    @IBOutlet weak var FavoritesContainer: UIView!
+    
+    @IBOutlet weak var FavoritesImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let favorites = NSUserDefaults.standardUserDefaults()
-        
-        favorites.synchronize()
-        
-        let favorited = favorites.boolForKey("favorited")
-        
-        if favorites.boolForKey("true"){
-            // Perform some action
-            print("true")
-        }
-        else {
-            print("false")
-        }
-        
         // Do any additional setup after loading the view.
     }
-
+    
+    override func viewDidAppear(animated: Bool) {
+        favState = NSUserDefaults.standardUserDefaults().boolForKey("favorited")
+        if (favState == true){
+            FavoritesImage.image = UIImage(named: "existing_favorites")
+            FavoritesImage.image = UIImage(named: "existing_favorites")
+        } else{
+            FavoritesImage.image = UIImage(named: "empty_favorites")
+        }
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
