@@ -31,4 +31,8 @@ Time spent: 14 hrs
 
 ## GIF
 
+Walkthrough of requirements and optionals:
+
+![Video Walkthrough](db-1.gif)
+
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
