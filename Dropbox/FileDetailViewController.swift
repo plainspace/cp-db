@@ -10,20 +10,36 @@ import UIKit
 
 class FileDetailViewController: UIViewController {
     
+    @IBOutlet weak var LikeButton: UIButton!
+    
     let favorites = NSUserDefaults.standardUserDefaults()
 
     @IBAction func LikeButton(sender: UIButton) {
+            
+        LikeButton.selected = !LikeButton.selected
         
-        if (sender.selected == true)
-        {
-            sender.selected = false
-            favorites.setBool(false, forKey: "favorited")
-            favorites.synchronize()
-        } else{
-            sender.selected = true
-            favorites.setBool(true, forKey: "favorited")
-            favorites.synchronize()
+        if LikeButton.selected {
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "favorited")
+                print("favorited")
+                favorites.synchronize()
+        } else {
+            NSUserDefaults.standardUserDefaults().setBool(false, forKey: "favorited")
+                print("not favorited")
+                favorites.synchronize()
+            
         }
+        
+        
+//        if (sender.selected == true)
+//        {
+//            sender.selected = false
+//            favorites.setBool(false, forKey: "favorited")
+//            favorites.synchronize()
+//        } else{
+//            sender.selected = true
+//            favorites.setBool(true, forKey: "favorited")
+//            favorites.synchronize()
+//        }
         
     }
     

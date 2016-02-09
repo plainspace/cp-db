@@ -864,7 +864,7 @@
                                             <color key="titleColor" red="0.22352941179999999" green="0.66274509800000003" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="LikeButton:" destination="FYc-lj-uLA" eventType="touchUpInside" id="6KY-p1-7xG"/>
+                                            <action selector="LikeButton:" destination="FYc-lj-uLA" eventType="touchUpInside" id="DG5-eo-12y"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -878,6 +878,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="e9Q-Gf-WWd"/>
+                    <connections>
+                        <outlet property="LikeButton" destination="60x-Lp-5bT" id="xUh-Yd-xeV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qUr-0s-WuO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -916,11 +919,16 @@
                                 <rect key="frame" x="0.0" y="65" width="320" height="454"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="existing_favorites" id="vJa-Uz-dGK">
+                                <rect key="frame" x="0.0" y="65" width="320" height="417"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Favorites" id="kTz-FC-snl"/>
                     <connections>
+                        <outlet property="FavoritedImage" destination="vJa-Uz-dGK" id="GJ6-CT-X7a"/>
                         <outlet property="FavoritesContainer" destination="OvP-YK-3U4" id="HQI-0x-MGa"/>
                         <outlet property="FavoritesImage" destination="6Fi-OB-nbQ" id="2xh-rD-odp"/>
                     </connections>
@@ -1072,6 +1080,7 @@
         <image name="empty_favorites" width="320" height="454"/>
         <image name="empty_files" width="320" height="454"/>
         <image name="empty_photos" width="320" height="454"/>
+        <image name="existing_favorites" width="320" height="417"/>
         <image name="existing_files" width="320" height="454"/>
         <image name="existing_files_1" width="320" height="454"/>
         <image name="existing_files_favorite_off" width="320" height="44"/>
