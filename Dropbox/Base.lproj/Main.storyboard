@@ -848,11 +848,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="QRi-xI-LLn">
+                            <view contentMode="scaleToFill" id="QRi-xI-LLn" userLabel="Existing Files Favorite Button Container">
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="60x-Lp-5bT">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="60x-Lp-5bT" userLabel="existing_files_favorite_off">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
@@ -864,7 +864,22 @@
                                             <color key="titleColor" red="0.22352941179999999" green="0.66274509800000003" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="LikeButton:" destination="FYc-lj-uLA" eventType="touchUpInside" id="DG5-eo-12y"/>
+                                            <action selector="LikeButton:" destination="FYc-lj-uLA" eventType="touchUpInside" id="3s5-kq-Ihk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="gt7-zG-nkZ" userLabel="existing_files_favorite_off">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" image="existing_files_favorite_on">
+                                            <color key="titleColor" red="0.23634442689999999" green="0.71873790029999995" blue="0.91480094190000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="selected" image="existing_files_favorite_on">
+                                            <color key="titleColor" red="0.22352941179999999" green="0.66274509800000003" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="LikeButton:" destination="FYc-lj-uLA" eventType="touchUpInside" id="hZ5-Ti-6re"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -880,6 +895,7 @@
                     <navigationItem key="navigationItem" id="e9Q-Gf-WWd"/>
                     <connections>
                         <outlet property="LikeButton" destination="60x-Lp-5bT" id="xUh-Yd-xeV"/>
+                        <outlet property="LikedButton" destination="gt7-zG-nkZ" id="Bs7-dm-cuf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qUr-0s-WuO" userLabel="First Responder" sceneMemberID="firstResponder"/>
