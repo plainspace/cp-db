@@ -26,15 +26,6 @@ class FavoritesViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-//    override func viewDidAppear(animated: Bool) {
-//        favState = NSUserDefaults.standardUserDefaults().boolForKey("favorited")
-//        if (favState == true){
-//            FavoritesImage.image = UIImage(named: "existing_favorites")
-//        } else{
-//            FavoritesImage.image = UIImage(named: "empty_favorites")
-//        }
-//    }
-    
     override func viewWillAppear(animated: Bool) {
     
         let favorited = NSUserDefaults.standardUserDefaults().boolForKey("favorited")

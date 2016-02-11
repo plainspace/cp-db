@@ -38,40 +38,10 @@ class FileDetailViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        
         let favorited = NSUserDefaults.standardUserDefaults().boolForKey("favorited")
         
-        if favorited == true {
-            LikeButton.hidden = true
-            LikedButton.hidden = false
-            print("favorited button")
-        } else {
-            LikeButton.hidden = false
-            LikedButton.hidden = true
-            print("not favorited button")
-        }
+        LikeButton.selected = favorited
         
-        // let favorited = NSUserDefaults.standardUserDefaults().boolForKey("favorited")
-        
-        // LikeButton.selected = !LikeButton.selected
-        
-//        if LikeButton.selected {
-//            LikedButton.hidden = false
-//            LikeButton.hidden = true
-//        } else {
-//            LikedButton.hidden = true
-//            LikeButton.hidden = false
-//        }
-        
-//        if LikeButton == true {
-//            LikedButton.hidden = false
-//            LikeButton.hidden = true
-//            print("favorited button")
-//        } else {
-//            LikedButton.hidden = true
-//            LikeButton.hidden = false
-//            print("not favorited button")
-//        }
     }
 
     override func didReceiveMemoryWarning() {
